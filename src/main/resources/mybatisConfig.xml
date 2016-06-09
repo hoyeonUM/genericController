@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!-- properties 설정 -->
+
+
+<!-- 런타임(mybatis가 실행하는 동안 사용할 값) 관련 값 설정 -->
+
+<settings>
+
+<setting name="cacheEnabled" value="true" />
+
+<setting name="lazyLoadingEnabled" value="true" />
+
+<setting name="multipleResultSetsEnabled" value="true" />
+
+<setting name="useColumnLabel" value="true" />
+
+<setting name="useGeneratedKeys" value="false" />
+
+<setting name="defaultExecutorType" value="SIMPLE" />
+
+<setting name="defaultStatementTimeout" value="25000" />
+
+</settings>
+
+
+
+
+<!-- Value Object 설정 -->
+
+<typeAliases>
+
+<typeAlias alias="BoardVO" type="web.board.service.BoardVO" />
+
+
+
+</typeAliases>
+
+
+
+
+
+
+
+
+</configuration>
